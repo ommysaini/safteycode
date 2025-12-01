@@ -50,6 +50,7 @@ function addQrCards() {
     //console.log(qID);
     //https://surkshacode.com/safetycode/
     let qrId = 'http://api.safetycode.in/safetycode/' + qID;
+    // let qrId = 'http://localhost:1323/safetycode/' + qID;
     qr_cards =
       qr_cards +
       `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
@@ -58,7 +59,26 @@ function addQrCards() {
       pageIndex++;
     }
   }
-  //console.log('qrIds', qrIds);
+  console.log('qrIds', qrIds);
+  // let url= 'http://localhost:1323/safetycode/generate';
+  let url = 'http://api.safetycode.in/safetycode/generate';
+  // debugger;
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ qrIds: qrIds }),
+  })
+    .then((response) => response.json(console.log('Response:', response)))
+    .then((data) => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  // Save the QR codes to localStorage
+
   this.saveCodes(qrIds);
 }
 
