@@ -48,7 +48,6 @@ function addQrCards() {
     let qID = randomString + qrNumber;
     qrIds.push(qID);
     //console.log(qID);
-    //https://surkshacode.com/safetycode/
     let qrId = 'http://api.safetycode.in/safetycode/' + qID;
     qr_cards =
       qr_cards +
