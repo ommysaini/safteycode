@@ -308,8 +308,13 @@
         }
         async function callApi(code) {
             //http://localhost:4200/admin
+<<<<<<< HEAD
             // var url = "http://localhost:1323/safteycode/partner/" + code
            var url = "https://api.safetycode.in/safteycode/partner/" + code
+=======
+            //var url = "http://localhost:1337/safteycode/partner/" + code
+            var url = "https://api.safetycode.in/safteycode/partner/" + code
+>>>>>>> b5e007409f2e2fec5b5dbc3736c57986801bcc88
             try {
                 var response = await fetch(url);
             } catch (error) {
