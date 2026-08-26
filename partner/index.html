@@ -1,14 +1,449 @@
+<!-- =====================================================================
+OLD CODE BACKUP: OLD PARTNER PAGE HTML
+To restore old page: remove/comment the new code below, then uncomment this OLD block.
+Each old line is wrapped separately so nested HTML comments do not break the page.
+===================================================================== -->
+<!-- OLD: <!DOCTYPE html> -->
+<!-- OLD: <html lang="en"> -->
+<!-- OLD:  -->
+<!-- OLD: <head> -->
+<!-- OLD:     <title>Safety Code Partner</title> -->
+<!-- OLD:     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- OLD:     <meta name="description" -->
+<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
+<!-- OLD:     <meta name="keywords" -->
+<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
+<!-- OLD:     <link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16"> -->
+<!-- OLD:     <meta property="og:title" content="Your SAFETY with Safety QR Code"> -->
+<!-- OLD:     <meta property="og:site_name" content="Your SAFETY with Safety QR Code"> -->
+<!-- OLD:     <meta property="og:url" content="https://safetycode.in/"> -->
+<!-- OLD:     <meta property="og:image" content="https://safetycode.in/assets/imgs/qrimage.png"> -->
+<!-- OLD:     <meta property="og:description" -->
+<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
+<!-- OLD:     <link -->
+<!-- OLD:         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" -->
+<!-- OLD:         rel="stylesheet"> -->
+<!-- OLD:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" -->
+<!-- OLD:         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+<!-- OLD:     <link rel="stylesheet" href="./style.css"> -->
+<!-- OLD:     <link rel="icon" href="assets/logo.svg" type="image/gif" sizes="16x16"> -->
+<!-- OLD:     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> -->
+<!-- OLD:         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16"> -->
+<!-- OLD:             <path -->
+<!-- OLD:                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" /> -->
+<!-- OLD:         </symbol> -->
+<!-- OLD:         <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16"> -->
+<!-- OLD:             <path -->
+<!-- OLD:                 d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /> -->
+<!-- OLD:         </symbol> -->
+<!-- OLD:         <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16"> -->
+<!-- OLD:             <path -->
+<!-- OLD:                 d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /> -->
+<!-- OLD:         </symbol> -->
+<!-- OLD:     </svg> -->
+<!-- OLD: </head> -->
+<!-- OLD:  -->
+<!-- OLD: <body style="background-color: black;"> -->
+<!-- OLD:     <div class="container-fluid"> -->
+<!-- OLD:         <div style="text-align: center; margin-top: 10px;"> -->
+<!-- OLD:             <!- - <img src="assets/pm_logo.png" width="100px"> - -> -->
+<!-- OLD:             <span class="title">Safety Code Partner Program</span> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div class="top-form" id="top-form"> -->
+<!-- OLD:             <div> -->
+<!-- OLD:                 <input class="form-control" type="text" id="code" placeholder="Enter your code" autocomplete="off"> -->
+<!-- OLD:             </div> -->
+<!-- OLD:             <div class="btn-submit"> -->
+<!-- OLD:                 <button type="submit" class="btn btn-primary" onclick="getTrackerData()">Submit</button> -->
+<!-- OLD:             </div> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div class="text-center m-2"> -->
+<!-- OLD:             <div class="spinner-grow text-light" role="status" id="spinner" style="display: none;"> -->
+<!-- OLD:                 <span class="visually-hidden">Loading...</span> -->
+<!-- OLD:             </div> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div class="alert alert-danger d-flex align-items-center" role="alert" id="alert-div" -->
+<!-- OLD:             style="display: none !important"> -->
+<!-- OLD:             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"> -->
+<!-- OLD:                 <use xlink:href="#exclamation-triangle-fill" /> -->
+<!-- OLD:             </svg> -->
+<!-- OLD:             <div id="alert-content"> -->
+<!-- OLD:             </div> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div class="pari-content mb-4 text-center" id="pari-content"> -->
+<!-- OLD:             <a href="" target="_blank"> -->
+<!-- OLD:                 <img src="assets/qrpartner.png" alt="pm" class="img-fluid" style="align-self: center;"> -->
+<!-- OLD:             </a> -->
+<!-- OLD:             <!- - <iframe width="720" height="400" frameborder="0" allowfullscreen="1" class="img-fluid" -->
+<!-- OLD:                 src="https://www.youtube.com/embed/QkcAgjga3cg?controls=0"> -->
+<!-- OLD:             </iframe> - -> -->
+<!-- OLD:             <!- - <div class="accordion col-md-6 col-xs-12" id="accordionExample" style="text-align: left;"> -->
+<!-- OLD:                 <div class="accordion-item"> -->
+<!-- OLD:                     <h2 class="accordion-header" id="headingOne"> -->
+<!-- OLD:                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" -->
+<!-- OLD:                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> -->
+<!-- OLD:                             What is Safety Code? -->
+<!-- OLD:                         </button> -->
+<!-- OLD:                     </h2> -->
+<!-- OLD:                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" -->
+<!-- OLD:                         data-bs-parent="#accordionExample"> -->
+<!-- OLD:                         <div class="accordion-body"> -->
+<!-- OLD:                             In the event of a vehicle accident, the driver and his companions are not in a position to -->
+<!-- OLD:                             handle themselves, in that case the passersby or the police will see the "Safety code" QR -->
+<!-- OLD:                             code and scan it and tell the relatives of the driver. It is possible that your relatives -->
+<!-- OLD:                             have got into an accident here. Please come as soon as possible and at the same time which -->
+<!-- OLD:                             hospital the policemen are taking them, what treatment is being given to them, their family -->
+<!-- OLD:                             members keep getting instant updates if seen after the accident, the relatives of the driver -->
+<!-- OLD:                             get information at the same time. Might be possible -->
+<!-- OLD:  -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="accordion-item"> -->
+<!-- OLD:                     <h2 class="accordion-header" id="headingThree"> -->
+<!-- OLD:                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" -->
+<!-- OLD:                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> -->
+<!-- OLD:                             Is it legal in India? -->
+<!-- OLD:                         </button> -->
+<!-- OLD:                     </h2> -->
+<!-- OLD:                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" -->
+<!-- OLD:                         data-bs-parent="#accordionExample"> -->
+<!-- OLD:                         <div class="accordion-body"> -->
+<!-- OLD:                             Yes -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="accordion-item"> -->
+<!-- OLD:                     <h2 class="accordion-header" id="headingFour"> -->
+<!-- OLD:                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" -->
+<!-- OLD:                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> -->
+<!-- OLD:                             Is there a mobile version? -->
+<!-- OLD:                         </button> -->
+<!-- OLD:                     </h2> -->
+<!-- OLD:                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" -->
+<!-- OLD:                         data-bs-parent="#accordionExample"> -->
+<!-- OLD:                         <div class="accordion-body"> -->
+<!-- OLD:                             Yes, you can bet through the browser version or download the Android and iOS apps. -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="accordion-item"> -->
+<!-- OLD:                     <h2 class="accordion-header" id="headingFive"> -->
+<!-- OLD:                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" -->
+<!-- OLD:                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> -->
+<!-- OLD:                             Are there any bonuses for newcomers? -->
+<!-- OLD:                         </button> -->
+<!-- OLD:                     </h2> -->
+<!-- OLD:                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" -->
+<!-- OLD:                         data-bs-parent="#accordionExample"> -->
+<!-- OLD:                         <div class="accordion-body"> -->
+<!-- OLD:                             Yes -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:             </div> - -> -->
+<!-- OLD:         </div> -->
+<!-- OLD:  -->
+<!-- OLD:         <div id="profile" class="profile"> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div id="detail" class="mt-4" style="display: none;"> -->
+<!-- OLD:             <div class="row"> -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Registration -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="registration">0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Total Paid -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="totalPaid">0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:             </div> -->
+<!-- OLD:             <div class="row"> -->
+<!-- OLD:                 <!- - <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Deposit Amount -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="depositAmount">&#8377; 0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> - -> -->
+<!-- OLD:                 <!- - <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card border-success"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Your Commission -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="commission">&#8377; 0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Paid Amount -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="paidAmount">&#8377;0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> - -> -->
+<!-- OLD:             </div> -->
+<!-- OLD:             <!- - <div class="row"> -->
+<!-- OLD:  -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Remaining Amount -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="remainingAmount">&#8377; 0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Network Commission (200/deposit) -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="refCommission">&#8377;0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:             </div> - -> -->
+<!-- OLD:             <!- - <div class="row"> -->
+<!-- OLD:  -->
+<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:                     <div class="card"> -->
+<!-- OLD:                         <div class="card-header"> -->
+<!-- OLD:                             Your Network Users -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                         <div class="card-body"> -->
+<!-- OLD:                             <h2 class="card-text" id="referredTracker">0</h2> -->
+<!-- OLD:                         </div> -->
+<!-- OLD:                     </div> -->
+<!-- OLD:                 </div> -->
+<!-- OLD:             </div> - -> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div id="vehtable" class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
+<!-- OLD:             <table class="table table-striped mt-2 vehicle-table"> -->
+<!-- OLD:                 <thead> -->
+<!-- OLD:                     <tr> -->
+<!-- OLD:                         <th scope="col">#</th> -->
+<!-- OLD:                         <th scope="col">Name</th> -->
+<!-- OLD:                         <th scope="col">Mobile</th> -->
+<!-- OLD:                         <th scope="col">Vehicle No</th> -->
+<!-- OLD:                         <th scope="col">Reg Date</th> -->
+<!-- OLD:                         <th scope="col">Status</th> -->
+<!-- OLD:                     </tr> -->
+<!-- OLD:                 </thead> -->
+<!-- OLD:                 <!- - <span class="badge bg-success">Complete</span> - -> -->
+<!-- OLD:  -->
+<!-- OLD:                 <tbody id="vehicle"> -->
+<!-- OLD:                     <tr> -->
+<!-- OLD:                         <th scope="row"></th> -->
+<!-- OLD:                         <td></td> -->
+<!-- OLD:                         <td></td> -->
+<!-- OLD:                         <td></td> -->
+<!-- OLD:                         <td></td> -->
+<!-- OLD:                         <td></td> -->
+<!-- OLD:                     </tr> -->
+<!-- OLD:                 </tbody> -->
+<!-- OLD:             </table> -->
+<!-- OLD:         </div> -->
+<!-- OLD:         <div class="mb-4" style="text-align: center; display: none;" id="logoutBtn"> -->
+<!-- OLD:             <button class="btn btn-primary" onclick="logOut()">Logout</button> -->
+<!-- OLD:         </div> -->
+<!-- OLD:     </div> -->
+<!-- OLD:  -->
+<!-- OLD:     <script type="text/javascript"> -->
+<!-- OLD:         //console.log('js called'); -->
+<!-- OLD:         //callApi("http://localhost:1337/api/qeeda/ads/campaign"); -->
+<!-- OLD:         var spinner = document.getElementById("spinner"); -->
+<!-- OLD:         var alertDiv = document.getElementById("alert-div"); -->
+<!-- OLD:         var detail = document.getElementById("detail"); -->
+<!-- OLD:         var profile = document.getElementById("profile"); -->
+<!-- OLD:         var pariContent = document.getElementById("pari-content"); -->
+<!-- OLD:         var logoutBtn = document.getElementById("logoutBtn"); -->
+<!-- OLD:         var topForm = document.getElementById("top-form"); -->
+<!-- OLD:         var vehtable = document.getElementById("vehtable"); -->
+<!-- OLD:         //topForm.style.display = "none"; -->
+<!-- OLD:         vehtable.style.display = "none"; -->
+<!-- OLD:  -->
+<!-- OLD:         var savedCode = localStorage.getItem("code"); -->
+<!-- OLD:         console.log('savedCode', savedCode); -->
+<!-- OLD:         if (savedCode) { -->
+<!-- OLD:             pariContent.style.display = "none"; -->
+<!-- OLD:             spinner.style.display = "inline-block"; -->
+<!-- OLD:             detail.style.display = "none"; -->
+<!-- OLD:             profile.style.display = "none"; -->
+<!-- OLD:             topForm.style.display = "none"; -->
+<!-- OLD:             vehtable.style.display = "none"; -->
+<!-- OLD:             alertDiv.setAttribute('style', 'display: none !important'); -->
+<!-- OLD:             callApi(savedCode); -->
+<!-- OLD:         } -->
+<!-- OLD:         function getTrackerData() { -->
+<!-- OLD:             let code = document.getElementById("code").value; -->
+<!-- OLD:             spinner.style.display = "inline-block"; -->
+<!-- OLD:             detail.style.display = "none"; -->
+<!-- OLD:             profile.style.display = "none"; -->
+<!-- OLD:             vehtable.style.display = "none"; -->
+<!-- OLD:  -->
+<!-- OLD:             alertDiv.setAttribute('style', 'display: none !important'); -->
+<!-- OLD:             if (!code) { -->
+<!-- OLD:                 spinner.style.display = "none"; -->
+<!-- OLD:                 alert('Code is required!'); -->
+<!-- OLD:                 return; -->
+<!-- OLD:             } -->
+<!-- OLD:             console.log('code', code); -->
+<!-- OLD:             callApi(code); -->
+<!-- OLD:         } -->
+<!-- OLD:         async function callApi(code) { -->
+<!-- OLD:             //http://localhost:4200/admin -->
+<!-- OLD:             //var url = "http://localhost:1337/safteycode/partner/" + code -->
+<!-- OLD:             var url = "https://api.safetycode.in/safteycode/partner/" + code -->
+<!-- OLD:             try { -->
+<!-- OLD:                 var response = await fetch(url); -->
+<!-- OLD:             } catch (error) { -->
+<!-- OLD:                 spinner.style.display = "none"; -->
+<!-- OLD:                 alert(error) -->
+<!-- OLD:                 return; -->
+<!-- OLD:             } -->
+<!-- OLD:             spinner.style.display = "none"; -->
+<!-- OLD:             if (!response) { -->
+<!-- OLD:                 alert("Server error, Try again later") -->
+<!-- OLD:                 return; -->
+<!-- OLD:             } -->
+<!-- OLD:             var respData = await response.json(); -->
+<!-- OLD:             if (respData.code && respData.code == "error") { -->
+<!-- OLD:                 //alert("" + respData.message); -->
+<!-- OLD:                 alertDiv.style.display = "block"; -->
+<!-- OLD:                 document.getElementById("alert-content").innerHTML = respData.message; -->
+<!-- OLD:                 return; -->
+<!-- OLD:             } -->
+<!-- OLD:             //console.log('data', respData); -->
+<!-- OLD:             showData(respData); -->
+<!-- OLD:  -->
+<!-- OLD:         } -->
+<!-- OLD:         function showData(data) { -->
+<!-- OLD:             topForm.style.display = "none"; -->
+<!-- OLD:             pariContent.style.display = "none"; -->
+<!-- OLD:             localStorage.setItem("code", data.partnerId); -->
+<!-- OLD:             var date = new Date(data.createdAt); -->
+<!-- OLD:             var jDate = date.toString(); -->
+<!-- OLD:             var newDate = formatDate(jDate); -->
+<!-- OLD:  -->
+<!-- OLD:             let item = `<div class="card col-md-6 col-xs-12 p-2"> -->
+<!-- OLD:                 <h6>Name: ${data.fullName}</h6> -->
+<!-- OLD:                 <h6>Mobile: ${data.mobile}</h6> -->
+<!-- OLD:                 <h6>Promo Code: ${data.partnerId}</h6> -->
+<!-- OLD:                 <h6>Joining Date: ${newDate}</h6> -->
+<!-- OLD:             </div>`; -->
+<!-- OLD:             document.getElementById("profile").innerHTML = item; -->
+<!-- OLD:             profile.style.display = "block"; -->
+<!-- OLD:             vehtable.style.display = "block"; -->
+<!-- OLD:             document.getElementById("totalPaid").innerHTML = data.totalPaid ? data.totalPaid : 0; -->
+<!-- OLD:             document.getElementById("registration").innerHTML = data.totalRegistered ? data.totalRegistered : 0; -->
+<!-- OLD:  -->
+<!-- OLD:             let vehicle = ''; -->
+<!-- OLD:             if (data.vehicles) { -->
+<!-- OLD:                 for (let i = 0; i < data.vehicles.length; i++) { -->
+<!-- OLD:                     var date1 = new Date(data.vehicles[i].createdAt); -->
+<!-- OLD:                     var jDate1 = date1.toString(); -->
+<!-- OLD:                     var newDate1 = formatDate(jDate1); -->
+<!-- OLD:                     vehicle = vehicle + `<tr> -->
+<!-- OLD:                         <th scope="row">${i + 1}</th> -->
+<!-- OLD:                         <td>${data.vehicles[i].user.fullName}</td> -->
+<!-- OLD:                         <td>${data.vehicles[i].user.mobile}</td> -->
+<!-- OLD:                         <td>${data.vehicles[i].vehicleRegNo}</td> -->
+<!-- OLD:                         <td>${newDate1}</td> -->
+<!-- OLD:                         <td>${data.vehicles[i].status?'Active':'Inactive'}</td> -->
+<!-- OLD:                     </tr>` -->
+<!-- OLD:                 } -->
+<!-- OLD:                 document.getElementById("vehicle").innerHTML = vehicle; -->
+<!-- OLD:             } -->
+<!-- OLD:  -->
+<!-- OLD:             //document.getElementById("depositAmount").innerHTML = `&#8377; ${(data.deposits * 73.5).toFixed(2)}`; -->
+<!-- OLD:             //document.getElementById("commission").innerHTML = `&#8377; ${data.commission}`; -->
+<!-- OLD:             //document.getElementById("paidAmount").innerHTML = `&#8377; ${data.paidAmount}`; -->
+<!-- OLD:             //document.getElementById("remainingAmount").innerHTML = `&#8377; ${data.commission - data.paidAmount}`; -->
+<!-- OLD:             //document.getElementById("refCommission").innerHTML = `&#8377; ${data.referralCommission ? data.referralCommission : 0}`; -->
+<!-- OLD:             //document.getElementById("referredTracker").innerHTML = data.referredTracker ? data.referredTracker : 0; -->
+<!-- OLD:             detail.style.display = "block"; -->
+<!-- OLD:             logoutBtn.style.display = "block"; -->
+<!-- OLD:         } -->
+<!-- OLD:  -->
+<!-- OLD:         function formatDate(date) { -->
+<!-- OLD:             var d = new Date(date), -->
+<!-- OLD:                 month = '' + (d.getMonth() + 1), -->
+<!-- OLD:                 day = '' + d.getDate(), -->
+<!-- OLD:                 year = d.getFullYear(); -->
+<!-- OLD:  -->
+<!-- OLD:             if (month.length < 2) -->
+<!-- OLD:                 month = '0' + month; -->
+<!-- OLD:             if (day.length < 2) -->
+<!-- OLD:                 day = '0' + day; -->
+<!-- OLD:  -->
+<!-- OLD:             return [day, month, year].join('-'); -->
+<!-- OLD:         } -->
+<!-- OLD:  -->
+<!-- OLD:         function logOut() { -->
+<!-- OLD:             localStorage.removeItem("code"); -->
+<!-- OLD:             logoutBtn.style.display = "none"; -->
+<!-- OLD:             topForm.style.display = "flex"; -->
+<!-- OLD:             pariContent.style.display = "flex"; -->
+<!-- OLD:             detail.style.display = "none"; -->
+<!-- OLD:             profile.style.display = "none"; -->
+<!-- OLD:             vehtable.style.display ="none"; -->
+<!-- OLD:         } -->
+<!-- OLD:  -->
+<!-- OLD:         function copyLink() { -->
+<!-- OLD:             /* Get the text field */ -->
+<!-- OLD:             var copyText = document.getElementById("rc"); -->
+<!-- OLD:             /* Select the text field */ -->
+<!-- OLD:             copyText.select(); -->
+<!-- OLD:             copyText.setSelectionRange(0, 99999); /*For mobile devices*/ -->
+<!-- OLD:  -->
+<!-- OLD:             /* Copy the text inside the text field */ -->
+<!-- OLD:             document.execCommand("copy"); -->
+<!-- OLD:             /* Alert the copied text */ -->
+<!-- OLD:             document.getElementById("cpd").style.display = "inline-block" -->
+<!-- OLD:             // alert("Copied the text: " + copyText.value); -->
+<!-- OLD:         } -->
+<!-- OLD:     </script> -->
+<!-- OLD:     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" -->
+<!-- OLD:         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" -->
+<!-- OLD:         crossorigin="anonymous"></script> -->
+<!-- OLD:  -->
+<!-- OLD:  -->
+<!-- OLD:  -->
+<!-- OLD: </body> -->
+<!-- OLD:  -->
+<!-- OLD: </html> -->
+<!-- ========================= END OLD CODE BACKUP ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Safety Code Partner</title>
+    <title>Safety Code Partner Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <meta name="keywords"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
-    <link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16">
     <meta property="og:title" content="Your SAFETY with Safety QR Code">
     <meta property="og:site_name" content="Your SAFETY with Safety QR Code">
     <meta property="og:url" content="https://safetycode.in/">
@@ -16,415 +451,405 @@
     <meta property="og:description"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/logo.svg" type="image/gif" sizes="16x16">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-            <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-        </symbol>
-        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-            <path
-                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-        </symbol>
-        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-            <path
-                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-        </symbol>
-    </svg>
 </head>
 
-<body style="background-color: black;">
-    <div class="container-fluid">
-        <div style="text-align: center; margin-top: 10px;">
-            <!-- <img src="assets/pm_logo.png" width="100px"> -->
-            <span class="title">Safety Code Partner Program</span>
-        </div>
-        <div class="top-form" id="top-form">
-            <div>
-                <input class="form-control" type="text" id="code" placeholder="Enter your code" autocomplete="off">
+<body>
+    <!-- Old partner page layout has been commented out/replaced with this login-style dashboard UI. -->
+    <main class="partner-app">
+        <section class="login-view" id="login-view">
+            <div class="brand-panel">
+                <div class="brand-mark">
+                    <img src="../assets/imgs/logo.png" alt="Safety Code">
+                    <span>Partner Portal</span>
+                </div>
+                <div class="brand-copy">
+                    <p class="eyebrow">Partner access</p>
+                    <h1>Track partner registrations with a clean local dashboard.</h1>
+                    <p class="lead">Enter your partner code to view registrations, payment status, vehicle numbers and owner details.</p>
+                </div>
+                <div class="brand-metrics">
+                    <div>
+                        <strong>QR</strong>
+                        <span>Vehicle safety</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Emergency ready</span>
+                    </div>
+                </div>
             </div>
-            <div class="btn-submit">
-                <button type="submit" class="btn btn-primary" onclick="getTrackerData()">Submit</button>
-            </div>
-        </div>
-        <div class="text-center m-2">
-            <div class="spinner-grow text-light" role="status" id="spinner" style="display: none;">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-        <div class="alert alert-danger d-flex align-items-center" role="alert" id="alert-div"
-            style="display: none !important">
-            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
-                <use xlink:href="#exclamation-triangle-fill" />
-            </svg>
-            <div id="alert-content">
-            </div>
-        </div>
-        <div class="pari-content mb-4 text-center" id="pari-content">
-            <a href="" target="_blank">
-                <img src="assets/qrpartner.png" alt="pm" class="img-fluid" style="align-self: center;">
-            </a>
-            <!-- <iframe width="720" height="400" frameborder="0" allowfullscreen="1" class="img-fluid"
-                src="https://www.youtube.com/embed/QkcAgjga3cg?controls=0">
-            </iframe> -->
-            <!-- <div class="accordion col-md-6 col-xs-12" id="accordionExample" style="text-align: left;">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            What is Safety Code?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            In the event of a vehicle accident, the driver and his companions are not in a position to
-                            handle themselves, in that case the passersby or the police will see the "Safety code" QR
-                            code and scan it and tell the relatives of the driver. It is possible that your relatives
-                            have got into an accident here. Please come as soon as possible and at the same time which
-                            hospital the policemen are taking them, what treatment is being given to them, their family
-                            members keep getting instant updates if seen after the accident, the relatives of the driver
-                            get information at the same time. Might be possible
 
-                        </div>
-                    </div>
+            <form class="login-card" onsubmit="getTrackerData(event)">
+                <div class="card-logo">
+                    <img src="../assets/imgs/logo.png" alt="Safety Code">
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Is it legal in India?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Yes
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Is there a mobile version?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Yes, you can bet through the browser version or download the Android and iOS apps.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Are there any bonuses for newcomers?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Yes
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+                <h2>Partner Login</h2>
+                <p>Use your promo code to continue.</p>
 
-        <div id="profile" class="profile">
-        </div>
-        <div id="detail" class="mt-4" style="display: none;">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Registration
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="registration">0</h2>
-                        </div>
-                    </div>
+                <label for="code">Partner code</label>
+                <div class="input-wrap">
+                    <span>#</span>
+                    <input type="text" id="code" placeholder="localdemo" autocomplete="off">
                 </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Total Paid
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="totalPaid">0</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Deposit Amount
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="depositAmount">&#8377; 0</h2>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card border-success">
-                        <div class="card-header">
-                            Your Commission
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="commission">&#8377; 0</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Paid Amount
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="paidAmount">&#8377;0</h2>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <!-- <div class="row">
 
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Remaining Amount
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="remainingAmount">&#8377; 0</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Network Commission (200/deposit)
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="refCommission">&#8377;0</h2>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="row">
+                <button type="submit" id="login-button">
+                    <span id="button-text">Continue</span>
+                    <span class="spinner" id="spinner" aria-hidden="true"></span>
+                </button>
 
-                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Your Network Users
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-text" id="referredTracker">0</h2>
-                        </div>
-                    </div>
+                <div class="alert" id="alert-div">
+                    <strong id="alert-title">Error</strong>
+                    <span id="alert-content"></span>
                 </div>
-            </div> -->
-        </div>
-        <div id="vehtable" class="col-md-6 col-sm-12 col-xs-12 mb-4">
-            <table class="table table-striped mt-2 vehicle-table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Mobile</th>
-                        <th scope="col">Vehicle No</th>
-                        <th scope="col">Reg Date</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <!-- <span class="badge bg-success">Complete</span> -->
 
-                <tbody id="vehicle">
-                    <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="mb-4" style="text-align: center; display: none;" id="logoutBtn">
-            <button class="btn btn-primary" onclick="logOut()">Logout</button>
-        </div>
-    </div>
+                <div class="login-hint">
+                    Local demo code: <strong>localdemo</strong>
+                </div>
+            </form>
+        </section>
+
+        <section class="dashboard-view" id="dashboard-view">
+            <header class="dashboard-header">
+                <div class="brand-mark small">
+                    <img src="../assets/imgs/logo.png" alt="Safety Code">
+                    <span>Partner Dashboard</span>
+                </div>
+                <button type="button" class="logout-button" onclick="logOut()">Logout</button>
+            </header>
+
+            <section class="summary-band">
+                <div>
+                    <p class="eyebrow">Partner dashboard</p>
+                    <h1 id="partner-name">Partner</h1>
+                    <p id="partner-meta">Promo code</p>
+                </div>
+                <div class="profile-card" id="profile"></div>
+            </section>
+
+            <section class="stats-grid" id="detail">
+                <article class="stat-card">
+                    <span>Total registrations</span>
+                    <strong id="registration">0</strong>
+                </article>
+                <article class="stat-card paid">
+                    <span>Total paid</span>
+                    <strong id="totalPaid">0</strong>
+                </article>
+                <article class="stat-card pending">
+                    <span>Pending payment</span>
+                    <strong id="pendingPayment">0</strong>
+                </article>
+            </section>
+
+            <section class="table-panel call-panel" id="call-log-panel">
+                <div class="table-toolbar">
+                    <div>
+                        <h2>Latest Call Attempts</h2>
+                        <p id="call-count">No call attempts yet</p>
+                    </div>
+                    <button type="button" class="refresh-button" onclick="refreshCallAttempts()">Refresh</button>
+                </div>
+                <div class="table-scroll">
+                    <table class="vehicle-table call-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Vehicle No</th>
+                                <th>Owner</th>
+                                <th>Call Type</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="call-attempts"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="table-panel" id="vehtable">
+                <div class="table-toolbar">
+                    <div>
+                        <h2>Registered Vehicles</h2>
+                        <p id="table-count">0 records</p>
+                    </div>
+                    <input type="search" id="vehicle-search" placeholder="Search vehicle or name" oninput="renderVehicles()">
+                </div>
+                <div class="table-scroll">
+                    <table class="vehicle-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Mobile</th>
+                                <th>Vehicle No</th>
+                                <th>Reg Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vehicle"></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <script type="text/javascript">
-        //console.log('js called');
-        //callApi("http://localhost:1337/api/qeeda/ads/campaign");
+        var loginView = document.getElementById("login-view");
+        var dashboardView = document.getElementById("dashboard-view");
         var spinner = document.getElementById("spinner");
+        var buttonText = document.getElementById("button-text");
+        var loginButton = document.getElementById("login-button");
         var alertDiv = document.getElementById("alert-div");
-        var detail = document.getElementById("detail");
         var profile = document.getElementById("profile");
-        var pariContent = document.getElementById("pari-content");
-        var logoutBtn = document.getElementById("logoutBtn");
-        var topForm = document.getElementById("top-form");
-        var vehtable = document.getElementById("vehtable");
-        //topForm.style.display = "none";
-        vehtable.style.display = "none";
+        var vehiclesData = [];
+        var callAttemptsData = [];
+        var activePartnerCode = "";
+        var callRefreshTimer = null;
+        var API_BASE = window.SAFETY_API_BASE || "https://safetycode-api-2026.vercel.app";
 
-        var savedCode = localStorage.getItem("code");
-        console.log('savedCode', savedCode);
-        if (savedCode) {
-            pariContent.style.display = "none";
-            spinner.style.display = "inline-block";
-            detail.style.display = "none";
-            profile.style.display = "none";
-            topForm.style.display = "none";
-            vehtable.style.display = "none";
-            alertDiv.setAttribute('style', 'display: none !important');
-            callApi(savedCode);
-        }
-        function getTrackerData() {
-            let code = document.getElementById("code").value;
-            spinner.style.display = "inline-block";
-            detail.style.display = "none";
-            profile.style.display = "none";
-            vehtable.style.display = "none";
+        localStorage.removeItem("code");
 
-            alertDiv.setAttribute('style', 'display: none !important');
+        function getTrackerData(event) {
+            if (event) {
+                event.preventDefault();
+            }
+
+            var code = document.getElementById("code").value.trim();
+            hideError();
+
             if (!code) {
-                spinner.style.display = "none";
-                alert('Code is required!');
+                showError("Code required", "Please enter your partner code.");
                 return;
             }
-            console.log('code', code);
+
             callApi(code);
         }
+
         async function callApi(code) {
-            //http://localhost:4200/admin
-            //var url = "http://localhost:1337/safteycode/partner/" + code
-            var url = "https://api.safetycode.in/safteycode/partner/" + code
+            setLoading(true);
+            var url = API_BASE + "/safteycode/partner/" + encodeURIComponent(code);
+
             try {
                 var response = await fetch(url);
-            } catch (error) {
-                spinner.style.display = "none";
-                alert(error)
-                return;
-            }
-            spinner.style.display = "none";
-            if (!response) {
-                alert("Server error, Try again later")
-                return;
-            }
-            var respData = await response.json();
-            if (respData.code && respData.code == "error") {
-                //alert("" + respData.message);
-                alertDiv.style.display = "block";
-                document.getElementById("alert-content").innerHTML = respData.message;
-                return;
-            }
-            //console.log('data', respData);
-            showData(respData);
+                var respData = await response.json();
 
-        }
-        function showData(data) {
-            topForm.style.display = "none";
-            pariContent.style.display = "none";
-            localStorage.setItem("code", data.partnerId);
-            var date = new Date(data.createdAt);
-            var jDate = date.toString();
-            var newDate = formatDate(jDate);
-
-            let item = `<div class="card col-md-6 col-xs-12 p-2">
-                <h6>Name: ${data.fullName}</h6>
-                <h6>Mobile: ${data.mobile}</h6>
-                <h6>Promo Code: ${data.partnerId}</h6>
-                <h6>Joining Date: ${newDate}</h6>
-            </div>`;
-            document.getElementById("profile").innerHTML = item;
-            profile.style.display = "block";
-            vehtable.style.display = "block";
-            document.getElementById("totalPaid").innerHTML = data.totalPaid ? data.totalPaid : 0;
-            document.getElementById("registration").innerHTML = data.totalRegistered ? data.totalRegistered : 0;
-
-            let vehicle = '';
-            if (data.vehicles) {
-                for (let i = 0; i < data.vehicles.length; i++) {
-                    var date1 = new Date(data.vehicles[i].createdAt);
-                    var jDate1 = date1.toString();
-                    var newDate1 = formatDate(jDate1);
-                    vehicle = vehicle + `<tr>
-                        <th scope="row">${i + 1}</th>
-                        <td>${data.vehicles[i].user.fullName}</td>
-                        <td>${data.vehicles[i].user.mobile}</td>
-                        <td>${data.vehicles[i].vehicleRegNo}</td>
-                        <td>${newDate1}</td>
-                        <td>${data.vehicles[i].status?'Active':'Inactive'}</td>
-                    </tr>`
+                if (!response.ok || respData.code === "error") {
+                    showError("Login failed", respData.message || "Unable to find this partner code.");
+                    return;
                 }
-                document.getElementById("vehicle").innerHTML = vehicle;
+
+                showData(respData);
+            } catch (error) {
+                showError("Server error", "Safety Code server is not reachable right now.");
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        function showData(data) {
+            vehiclesData = Array.isArray(data.vehicles) ? data.vehicles : [];
+            callAttemptsData = Array.isArray(data.callAttempts) ? data.callAttempts : [];
+            activePartnerCode = data.partnerId || "";
+
+            document.getElementById("partner-name").innerText = data.fullName || "Partner";
+            document.getElementById("partner-meta").innerText = "Promo code: " + (data.partnerId || "-");
+
+            profile.innerHTML = `
+                <div>
+                    <span>Mobile</span>
+                    <strong>${data.mobile || "-"}</strong>
+                </div>
+                <div>
+                    <span>Joining date</span>
+                    <strong>${formatDate(data.createdAt)}</strong>
+                </div>
+            `;
+
+            var totalRegistered = Number(data.totalRegistered || vehiclesData.length || 0);
+            var totalPaid = Number(data.totalPaid || 0);
+            var pendingPayment = vehiclesData.filter(function (vehicle) {
+                return vehicle.paymentStatus !== "PAID";
+            }).length;
+
+            document.getElementById("registration").innerText = totalRegistered;
+            document.getElementById("totalPaid").innerText = totalPaid;
+            document.getElementById("pendingPayment").innerText = pendingPayment;
+
+            loginView.style.display = "none";
+            dashboardView.style.display = "block";
+            renderVehicles();
+            renderCallAttempts();
+            startCallRefresh();
+        }
+
+        function renderVehicles() {
+            var searchValue = (document.getElementById("vehicle-search").value || "").trim().toLowerCase();
+            var filteredVehicles = vehiclesData.filter(function (vehicle) {
+                var user = vehicle.user || {};
+                var searchText = [
+                    user.fullName,
+                    user.mobile,
+                    vehicle.vehicleRegNo,
+                    vehicle.paymentStatus
+                ].join(" ").toLowerCase();
+                return !searchValue || searchText.includes(searchValue);
+            });
+
+            document.getElementById("table-count").innerText = filteredVehicles.length + " records";
+            document.getElementById("vehicle").innerHTML = filteredVehicles.map(function (vehicle, index) {
+                var user = vehicle.user || {};
+                var statusText = vehicle.paymentStatus === "PAID" ? "Paid" : "Pending";
+                var statusClass = vehicle.paymentStatus === "PAID" ? "status-paid" : "status-pending";
+
+                return `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${user.fullName || "-"}</td>
+                        <td>${user.mobile || "-"}</td>
+                        <td><strong>${vehicle.vehicleRegNo || "-"}</strong></td>
+                        <td>${formatDate(vehicle.createdAt)}</td>
+                        <td><span class="status-pill ${statusClass}">${statusText}</span></td>
+                    </tr>
+                `;
+            }).join("");
+        }
+
+        function renderCallAttempts() {
+            var callCount = document.getElementById("call-count");
+            var callBody = document.getElementById("call-attempts");
+
+            callCount.innerText = callAttemptsData.length ? callAttemptsData.length + " latest attempts" : "No call attempts yet";
+
+            if (!callAttemptsData.length) {
+                callBody.innerHTML = `
+                    <tr>
+                        <td colspan="5" class="empty-row">No call attempt received yet.</td>
+                    </tr>
+                `;
+                return;
             }
 
-            //document.getElementById("depositAmount").innerHTML = `&#8377; ${(data.deposits * 73.5).toFixed(2)}`;
-            //document.getElementById("commission").innerHTML = `&#8377; ${data.commission}`;
-            //document.getElementById("paidAmount").innerHTML = `&#8377; ${data.paidAmount}`;
-            //document.getElementById("remainingAmount").innerHTML = `&#8377; ${data.commission - data.paidAmount}`;
-            //document.getElementById("refCommission").innerHTML = `&#8377; ${data.referralCommission ? data.referralCommission : 0}`;
-            //document.getElementById("referredTracker").innerHTML = data.referredTracker ? data.referredTracker : 0;
-            detail.style.display = "block";
-            logoutBtn.style.display = "block";
+            callBody.innerHTML = callAttemptsData.map(function (attempt) {
+                return `
+                    <tr>
+                        <td>${formatDateTime(attempt.createdAt)}</td>
+                        <td><strong>${attempt.vehicleRegNo || "-"}</strong></td>
+                        <td>${attempt.ownerName || "-"}</td>
+                        <td><span class="call-type">${formatCallType(attempt.targetType)}</span></td>
+                        <td><span class="status-pill status-paid">${attempt.status || "attempted"}</span></td>
+                    </tr>
+                `;
+            }).join("");
+        }
+
+        function startCallRefresh() {
+            if (callRefreshTimer) {
+                clearInterval(callRefreshTimer);
+            }
+
+            if (!activePartnerCode) {
+                return;
+            }
+
+            callRefreshTimer = setInterval(refreshCallAttempts, 5000);
+        }
+
+        async function refreshCallAttempts() {
+            if (!activePartnerCode) {
+                return;
+            }
+
+            var url = API_BASE + "/safteycode/partner/" + encodeURIComponent(activePartnerCode);
+
+            try {
+                var response = await fetch(url);
+                var data = await response.json();
+                if (!response.ok || data.code === "error") {
+                    return;
+                }
+                callAttemptsData = Array.isArray(data.callAttempts) ? data.callAttempts : [];
+                renderCallAttempts();
+            } catch (error) {
+                console.log("call refresh error", error);
+            }
+        }
+
+        function setLoading(isLoading) {
+            spinner.style.display = isLoading ? "inline-block" : "none";
+            buttonText.innerText = isLoading ? "Checking" : "Continue";
+            loginButton.disabled = isLoading;
+        }
+
+        function showError(title, message) {
+            alertDiv.style.display = "block";
+            document.getElementById("alert-title").innerText = title;
+            document.getElementById("alert-content").innerText = message;
+        }
+
+        function hideError() {
+            alertDiv.style.display = "none";
+            document.getElementById("alert-content").innerText = "";
         }
 
         function formatDate(date) {
-            var d = new Date(date),
-                month = '' + (d.getMonth() + 1),
-                day = '' + d.getDate(),
-                year = d.getFullYear();
+            if (!date) {
+                return "-";
+            }
 
-            if (month.length < 2)
-                month = '0' + month;
-            if (day.length < 2)
-                day = '0' + day;
+            var d = new Date(date);
+            var month = "" + (d.getMonth() + 1);
+            var day = "" + d.getDate();
+            var year = d.getFullYear();
 
-            return [day, month, year].join('-');
+            if (month.length < 2) {
+                month = "0" + month;
+            }
+            if (day.length < 2) {
+                day = "0" + day;
+            }
+
+            return [day, month, year].join("-");
+        }
+
+        function formatDateTime(date) {
+            if (!date) {
+                return "-";
+            }
+
+            var d = new Date(date);
+            return formatDate(date) + " " + d.toLocaleTimeString("en-IN", {
+                hour: "2-digit",
+                minute: "2-digit"
+            });
+        }
+
+        function formatCallType(type) {
+            if (!type) {
+                return "-";
+            }
+
+            return type.charAt(0).toUpperCase() + type.slice(1);
         }
 
         function logOut() {
             localStorage.removeItem("code");
-            logoutBtn.style.display = "none";
-            topForm.style.display = "flex";
-            pariContent.style.display = "flex";
-            detail.style.display = "none";
-            profile.style.display = "none";
-            vehtable.style.display ="none";
-        }
-
-        function copyLink() {
-            /* Get the text field */
-            var copyText = document.getElementById("rc");
-            /* Select the text field */
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-            /* Copy the text inside the text field */
-            document.execCommand("copy");
-            /* Alert the copied text */
-            document.getElementById("cpd").style.display = "inline-block"
-            // alert("Copied the text: " + copyText.value);
+            if (callRefreshTimer) {
+                clearInterval(callRefreshTimer);
+                callRefreshTimer = null;
+            }
+            document.getElementById("code").value = "";
+            document.getElementById("vehicle-search").value = "";
+            vehiclesData = [];
+            callAttemptsData = [];
+            activePartnerCode = "";
+            dashboardView.style.display = "none";
+            loginView.style.display = "grid";
+            hideError();
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-
-
-
 </body>
 
 </html>
