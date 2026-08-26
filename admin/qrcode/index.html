@@ -117,6 +117,11 @@ Each old line is wrapped separately so nested HTML comments do not break the pag
     <link href="https://fonts.bunny.net/css?family=montserrat:400,500,600,700,800|open-sans:400,600,700"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // QR printing is intentionally available only from the authenticated
+        // dashboard menu. This public static page must never expose batches.
+        window.location.replace("https://api.safetycode.in/dashboard-login");
+    </script>
 </head>
 
 <body>
