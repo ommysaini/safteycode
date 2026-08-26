@@ -1,225 +1,98 @@
-<!-- =====================================================================
-OLD CODE BACKUP: OLD QR GENERATOR HTML
-To restore old page: remove/comment the new code below, then uncomment this OLD block.
-Each old line is wrapped separately so nested HTML comments do not break the page.
-===================================================================== -->
-<!-- OLD: <!DOCTYPE html> -->
-<!-- OLD: <html lang="en" class="gr__dl2_pushbulletusercontent_com"> -->
-<!-- OLD:  -->
-<!-- OLD: <head> -->
-<!-- OLD:     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> -->
-<!-- OLD:     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<!-- OLD:     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-<!-- OLD:     <title>safety qr code</title> -->
-<!-- OLD:     <link rel="stylesheet" href="./style.css"> -->
-<!-- OLD:     <link rel="preconnect" href="https://fonts.bunny.net"> -->
-<!-- OLD:     <link href="https://fonts.bunny.net/css?family=montserrat:200,300,400,500,700,900|open-sans:300,400,500,800" -->
-<!-- OLD:         rel="stylesheet" /> -->
-<!-- OLD:     <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script> -->
-<!-- OLD:     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> -->
-<!-- OLD: </head> -->
-<!-- OLD:  -->
-<!-- OLD: <body data-gr-c-s-loaded="true" class="body"> -->
-<!-- OLD:     <div class="print-hide top-div"> -->
-<!-- OLD:         <input type="number" id="pageStart" min="1" style="padding: 5px;" placeholder="Page Start"> -->
-<!-- OLD:         <input type="number" id="pageEnd" min="1" style="padding: 5px;" placeholder="Page End"> -->
-<!-- OLD:         <button onclick="onButtonClick()" class="create-btn" style="padding: 5px;">Create Codes</button> -->
-<!-- OLD:     </div> -->
-<!-- OLD:     <div id="body"> -->
-<!-- OLD:     </div> -->
-<!-- OLD:     <!- - <div id="qr-page" class="a4-page"> -->
-<!-- OLD:     </div> -->
-<!-- OLD:     <div id="qr-page2" class="a4-page"> -->
-<!-- OLD:     </div> -->
-<!-- OLD:     <div id="qr-page3" class="a4-page"> -->
-<!-- OLD:     </div> - -> -->
-<!-- OLD:     <!- - <p class="print-hide"> <button onclick="window.print()">Download/Print</button> </p> - -> -->
-<!-- OLD:     <!- - <script type="text/javascript"> -->
-<!-- OLD:         const params = new URLSearchParams(location.search); -->
-<!-- OLD:         let qr_cards = ''; -->
-<!-- OLD:         let qr_body = document.getElementById("body"); -->
-<!-- OLD:         let qr_page = document.getElementById("qr-page"); -->
-<!-- OLD:         let qr_page2 = document.getElementById("qr-page2"); -->
-<!-- OLD:         let startIndex = params.get('startPage'); -->
-<!-- OLD:         let endIndex = params.get('endPage'); -->
-<!-- OLD:         let qrPage = ''; -->
-<!-- OLD:         let pageIndex = startIndex; -->
-<!-- OLD:         let qrNumber = 100 + ((startIndex * 9) - 9); -->
-<!-- OLD:         let qrIds = []; -->
-<!-- OLD:         createPage(); -->
-<!-- OLD:         function createPage() { -->
-<!-- OLD:             for (let i = startIndex; i <= endIndex; i++) { -->
-<!-- OLD:                 qrPage = qrPage + `<div id="qrpage-${i}" class="a4-page">${i}</div>`; -->
-<!-- OLD:             } -->
-<!-- OLD:             //qrPage = qrPage + `<p class="print-hide"> <button onclick="window.print()">Download/Print</button> </p>`; -->
-<!-- OLD:             qr_body.innerHTML = qrPage; -->
-<!-- OLD:             addQrCards(); -->
-<!-- OLD:         } -->
-<!-- OLD:         function addQrCards() { -->
-<!-- OLD:             let qrStartIndex = ((startIndex - 1) * 9) + 1; -->
-<!-- OLD:             let qrEndIndex = endIndex * 9; -->
-<!-- OLD:             console.log('qrStartIndex', qrStartIndex); -->
-<!-- OLD:             console.log('qrEndIndex', qrEndIndex); -->
-<!-- OLD:             for (let i = qrStartIndex; i <= qrEndIndex; i++) { -->
-<!-- OLD:                 qrNumber++; -->
-<!-- OLD:                 const randomString = Math.random().toString(36).substring(2, 20); -->
-<!-- OLD:                 let qID = randomString + qrNumber; -->
-<!-- OLD:                 qrIds.push(qID); -->
-<!-- OLD:                 //console.log(qID); -->
-<!-- OLD:                 let qrId = "https://surkshacode.com/safetycode/" + qID; -->
-<!-- OLD:                 qr_cards = qr_cards + `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>` -->
-<!-- OLD:                 if (i % 9 == 0) { -->
-<!-- OLD:                     setQrCards(pageIndex, i, qr_cards) -->
-<!-- OLD:                     pageIndex++; -->
-<!-- OLD:                 } -->
-<!-- OLD:             } -->
-<!-- OLD:             console.log('qrIds', qrIds); -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:         function setQrCards(page, index, cards) { -->
-<!-- OLD:             let p = document.getElementById("qrpage-" + page); -->
-<!-- OLD:             p.innerHTML = cards; -->
-<!-- OLD:             qr_cards = ''; -->
-<!-- OLD:             //setQrCodes(index - 8, index); -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:         function setQrCodes(start, end) { -->
-<!-- OLD:             for (let j = start; j <= end; j++) { -->
-<!-- OLD:                 let elem = document.getElementById("qrcode-" + j); -->
-<!-- OLD:                 if (!elem) { -->
-<!-- OLD:                     continue; -->
-<!-- OLD:                 } -->
-<!-- OLD:                 let qrIdValue = elem.getAttribute("qr-id"); -->
-<!-- OLD:                 if (!qrIdValue) { -->
-<!-- OLD:                     continue; -->
-<!-- OLD:                 } -->
-<!-- OLD:                 new QRCode(elem, qrIdValue); -->
-<!-- OLD:             } -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:     </script> - -> -->
-<!-- OLD:  -->
-<!-- OLD:     <script src="./script.js"></script> -->
-<!-- OLD: </body> -->
-<!-- OLD:  -->
-<!-- OLD: </html> -->
-<!-- ========================= END OLD CODE BACKUP ========================= -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="gr__dl2_pushbulletusercontent_com">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Safety Code QR Generator</title>
-    <link rel="stylesheet" href="/admin/qrcode/style.css?v=20260826">
+    <title>safety qr code</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=montserrat:400,500,600,700,800|open-sans:400,600,700"
-        rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=montserrat:200,300,400,500,700,900|open-sans:300,400,500,800"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script>
-        // QR printing is intentionally available only from the authenticated
-        // dashboard menu. This public static page must never expose batches.
-        window.location.replace("https://api.safetycode.in/admin/qrcode");
-    </script>
 </head>
 
-<body>
-    <!-- Old plain QR page has been commented out/replaced with this admin generator UI. -->
-    <main class="qr-admin">
-        <section class="toolbar print-hide">
-            <div class="toolbar-copy">
-                <div class="brand-row">
-                    <img class="brand-logo" src="../../assets/imgs/logo.png" alt="Safety Code">
-                    <span>Admin QR</span>
-                </div>
-                <h1>QR Code Generator</h1>
-                <p>Database se aaye QR IDs ki printable sheets load karein.</p>
-            </div>
+<body data-gr-c-s-loaded="true" class="body">
+    <div class="print-hide top-div">
+        <input type="number" id="pageStart" min="1" style="padding: 5px;" placeholder="Page Start">
+        <input type="number" id="pageEnd" min="1" style="padding: 5px;" placeholder="Page End">
+        <button onclick="onButtonClick()" class="create-btn" style="padding: 5px;">Create Codes</button>
+    </div>
+    <div id="body">
+    </div>
+    <!-- <div id="qr-page" class="a4-page">
+    </div>
+    <div id="qr-page2" class="a4-page">
+    </div>
+    <div id="qr-page3" class="a4-page">
+    </div> -->
+    <!-- <p class="print-hide"> <button onclick="window.print()">Download/Print</button> </p> -->
+    <!-- <script type="text/javascript">
+        const params = new URLSearchParams(location.search);
+        let qr_cards = '';
+        let qr_body = document.getElementById("body");
+        let qr_page = document.getElementById("qr-page");
+        let qr_page2 = document.getElementById("qr-page2");
+        let startIndex = params.get('startPage');
+        let endIndex = params.get('endPage');
+        let qrPage = '';
+        let pageIndex = startIndex;
+        let qrNumber = 100 + ((startIndex * 9) - 9);
+        let qrIds = [];
+        createPage();
+        function createPage() {
+            for (let i = startIndex; i <= endIndex; i++) {
+                qrPage = qrPage + `<div id="qrpage-${i}" class="a4-page">${i}</div>`;
+            }
+            //qrPage = qrPage + `<p class="print-hide"> <button onclick="window.print()">Download/Print</button> </p>`;
+            qr_body.innerHTML = qrPage;
+            addQrCards();
+        }
+        function addQrCards() {
+            let qrStartIndex = ((startIndex - 1) * 9) + 1;
+            let qrEndIndex = endIndex * 9;
+            console.log('qrStartIndex', qrStartIndex);
+            console.log('qrEndIndex', qrEndIndex);
+            for (let i = qrStartIndex; i <= qrEndIndex; i++) {
+                qrNumber++;
+                const randomString = Math.random().toString(36).substring(2, 20);
+                let qID = randomString + qrNumber;
+                qrIds.push(qID);
+                //console.log(qID);
+                let qrId = "https://surkshacode.com/safetycode/" + qID;
+                qr_cards = qr_cards + `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`
+                if (i % 9 == 0) {
+                    setQrCards(pageIndex, i, qr_cards)
+                    pageIndex++;
+                }
+            }
+            console.log('qrIds', qrIds);
+        }
 
-            <div class="control-stack">
-                <form class="admin-auth" id="qrLoginForm">
-                    <label>
-                        Admin mobile
-                        <input type="text" id="adminUsername" maxlength="10" inputmode="numeric" placeholder="Mobile number">
-                    </label>
-                    <label>
-                        Password
-                        <input type="password" id="adminPassword" placeholder="Password">
-                    </label>
-                    <button type="submit" class="secondary-btn">Login</button>
-                    <button type="button" class="ghost-btn" id="qrLogoutBtn">Logout</button>
-                    <span id="authStatus">Login required</span>
-                </form>
+        function setQrCards(page, index, cards) {
+            let p = document.getElementById("qrpage-" + page);
+            p.innerHTML = cards;
+            qr_cards = '';
+            //setQrCodes(index - 8, index);
+        }
 
-                <form class="controls" onsubmit="onButtonClick(event)">
-                <label>
-                    Start page
-                    <input type="number" id="pageStart" min="1" value="1" placeholder="1">
-                </label>
-                <label>
-                    End page
-                    <input type="number" id="pageEnd" min="1" value="1" placeholder="1">
-                </label>
-                <button type="submit" id="createBtn" hidden>Generate</button>
-                <button type="button" class="save-btn" id="saveBtn" onclick="saveCurrentCodes()" disabled hidden>Save</button>
-                <button type="button" class="load-btn" id="loadBtn" onclick="loadSavedBatches()">Refresh Batches</button>
-                <button type="button" class="secondary-btn" onclick="printCodes()">Print</button>
-                <button type="button" class="ghost-btn" onclick="clearCodes()">Clear</button>
-                </form>
-            </div>
+        function setQrCodes(start, end) {
+            for (let j = start; j <= end; j++) {
+                let elem = document.getElementById("qrcode-" + j);
+                if (!elem) {
+                    continue;
+                }
+                let qrIdValue = elem.getAttribute("qr-id");
+                if (!qrIdValue) {
+                    continue;
+                }
+                new QRCode(elem, qrIdValue);
+            }
+        }
 
-            <div class="status-row">
-                <div class="status-card">
-                    <span>Pages</span>
-                    <strong id="pageCount">0</strong>
-                </div>
-                <div class="status-card">
-                    <span>QR codes</span>
-                    <strong id="codeCount">0</strong>
-                </div>
-                <div class="status-card wide" id="saveStatus">Ready</div>
-            </div>
-
-            <div class="batch-panel">
-                <div class="batch-heading">
-                    <div>
-                        <h2>Saved Batches</h2>
-                        <p>Load one batch only, then print it.</p>
-                    </div>
-                    <span id="activeBatch">No batch loaded</span>
-                </div>
-                <div class="batch-table-wrap">
-                    <table class="batch-table">
-                        <thead>
-                            <tr>
-                                <th>Batch</th>
-                                <th>Codes</th>
-                                <th>Saved</th>
-                                <th>Printed</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="batchTable">
-                            <tr>
-                                <td colspan="5">No saved batch loaded yet.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section class="empty-state print-hide" id="emptyState">
-            <div>
-                <span class="empty-icon">QR</span>
-                <h2>No QR sheet generated yet</h2>
-                <p>Database se batch load karke print karein.</p>
-            </div>
-        </section>
-
-        <section class="sheet-wrap" id="body"></section>
-    </main>
+    </script> -->
 
     <script src="./script.js"></script>
 </body>

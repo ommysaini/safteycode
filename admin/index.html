@@ -1,358 +1,14 @@
-<!-- =====================================================================
-OLD CODE BACKUP: OLD ADMIN VEHICLE PAGE HTML
-To restore old page: remove/comment the new code below, then uncomment this OLD block.
-Each old line is wrapped separately so nested HTML comments do not break the page.
-===================================================================== -->
-<!-- OLD: <!DOCTYPE html> -->
-<!-- OLD: <html lang="en"> -->
-<!-- OLD:  -->
-<!-- OLD: <head> -->
-<!-- OLD:     <title>Safety Code Partner</title> -->
-<!-- OLD:     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<!-- OLD:     <meta name="description" -->
-<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
-<!-- OLD:     <meta name="keywords" -->
-<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
-<!-- OLD:     <link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16"> -->
-<!-- OLD:     <meta property="og:title" content="Your SAFETY with Safety QR Code"> -->
-<!-- OLD:     <meta property="og:site_name" content="Your SAFETY with Safety QR Code"> -->
-<!-- OLD:     <meta property="og:url" content="https://safetycode.in/"> -->
-<!-- OLD:     <meta property="og:image" content="https://safetycode.in/assets/imgs/qrimage.png"> -->
-<!-- OLD:     <meta property="og:description" -->
-<!-- OLD:         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention"> -->
-<!-- OLD:     <link -->
-<!-- OLD:         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" -->
-<!-- OLD:         rel="stylesheet"> -->
-<!-- OLD:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" -->
-<!-- OLD:         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-<!-- OLD:     <link rel="stylesheet" href="./style.css"> -->
-<!-- OLD:     <link rel="icon" href="assets/logo.svg" type="image/gif" sizes="16x16"> -->
-<!-- OLD:     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"> -->
-<!-- OLD:         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16"> -->
-<!-- OLD:             <path -->
-<!-- OLD:                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" /> -->
-<!-- OLD:         </symbol> -->
-<!-- OLD:         <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16"> -->
-<!-- OLD:             <path -->
-<!-- OLD:                 d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" /> -->
-<!-- OLD:         </symbol> -->
-<!-- OLD:         <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16"> -->
-<!-- OLD:             <path -->
-<!-- OLD:                 d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" /> -->
-<!-- OLD:         </symbol> -->
-<!-- OLD:     </svg> -->
-<!-- OLD: </head> -->
-<!-- OLD:  -->
-<!-- OLD: <body > -->
-<!-- OLD:     <div class="container-fluid"> -->
-<!-- OLD:         <div style="text-align: center; margin-top: 10px;"> -->
-<!-- OLD:             <!- - <img src="assets/pm_logo.png" width="100px"> - -> -->
-<!-- OLD:             <span class="title">Safety Code Vehicle Panel</span> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div class="top-form" id="top-form"> -->
-<!-- OLD:             <div> -->
-<!-- OLD:                 <input class="form-control" type="text" id="code" placeholder="Enter vehicle number" autocomplete="off"> -->
-<!-- OLD:             </div> -->
-<!-- OLD:             <div class="btn-submit"> -->
-<!-- OLD:                 <button type="submit" class="btn btn-primary" onclick="getVehicleData()">Submit</button> -->
-<!-- OLD:             </div> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div class="text-center m-2"> -->
-<!-- OLD:             <div class="spinner-grow text-light" role="status" id="spinner" style="display: none;"> -->
-<!-- OLD:                 <span class="visually-hidden">Loading...</span> -->
-<!-- OLD:             </div> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div class="alert alert-danger d-flex align-items-center" role="alert" id="alert-div" -->
-<!-- OLD:             style="display: none !important"> -->
-<!-- OLD:             <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"> -->
-<!-- OLD:                 <use xlink:href="#exclamation-triangle-fill" /> -->
-<!-- OLD:             </svg> -->
-<!-- OLD:             <div id="alert-content"> -->
-<!-- OLD:             </div> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div id="profile" class="profile"> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div id="detail" class="mt-4" style="display: none;"> -->
-<!-- OLD:             <div class="row"> -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Registration -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="registration">0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Total Paid -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="totalPaid">0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:             </div> -->
-<!-- OLD:             <div class="row"> -->
-<!-- OLD:                 <!- - <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Deposit Amount -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="depositAmount">&#8377; 0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> - -> -->
-<!-- OLD:                 <!- - <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card border-success"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Your Commission -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="commission">&#8377; 0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Paid Amount -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="paidAmount">&#8377;0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> - -> -->
-<!-- OLD:             </div> -->
-<!-- OLD:             <!- - <div class="row"> -->
-<!-- OLD:  -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Remaining Amount -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="remainingAmount">&#8377; 0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Network Commission (200/deposit) -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="refCommission">&#8377;0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:             </div> - -> -->
-<!-- OLD:             <!- - <div class="row"> -->
-<!-- OLD:  -->
-<!-- OLD:                 <div class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:                     <div class="card"> -->
-<!-- OLD:                         <div class="card-header"> -->
-<!-- OLD:                             Your Network Users -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                         <div class="card-body"> -->
-<!-- OLD:                             <h2 class="card-text" id="referredTracker">0</h2> -->
-<!-- OLD:                         </div> -->
-<!-- OLD:                     </div> -->
-<!-- OLD:                 </div> -->
-<!-- OLD:             </div> - -> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div id="vehtable" class="col-md-6 col-sm-12 col-xs-12 mb-4"> -->
-<!-- OLD:             <table class="table table-striped mt-2 vehicle-table"> -->
-<!-- OLD:                 <thead> -->
-<!-- OLD:                     <tr> -->
-<!-- OLD:                         <th scope="col">#</th> -->
-<!-- OLD:                         <th scope="col">Name</th> -->
-<!-- OLD:                         <th scope="col">Mobile</th> -->
-<!-- OLD:                         <th scope="col">QR ID</th> -->
-<!-- OLD:                         <th scope="col">Payment</th> -->
-<!-- OLD:                         <th scope="col">Status</th> -->
-<!-- OLD:                     </tr> -->
-<!-- OLD:                 </thead> -->
-<!-- OLD:                 <!- - <span class="badge bg-success">Complete</span> - -> -->
-<!-- OLD:  -->
-<!-- OLD:                 <tbody id="vehicle"> -->
-<!-- OLD:                     <tr> -->
-<!-- OLD:                         <th scope="row"></th> -->
-<!-- OLD:                         <td></td> -->
-<!-- OLD:                         <td></td> -->
-<!-- OLD:                         <td></td> -->
-<!-- OLD:                         <td></td> -->
-<!-- OLD:                         <td></td> -->
-<!-- OLD:                     </tr> -->
-<!-- OLD:                 </tbody> -->
-<!-- OLD:             </table> -->
-<!-- OLD:         </div> -->
-<!-- OLD:         <div class="mb-4" style="text-align: center; display: none; margin-top: 10px;" id="logoutBtn"> -->
-<!-- OLD:             <button class="btn btn-primary" onclick="logOut()">Logout</button> -->
-<!-- OLD:         </div> -->
-<!-- OLD:     </div> -->
-<!-- OLD:  -->
-<!-- OLD:     <script type="text/javascript"> -->
-<!-- OLD:         //console.log('js called'); -->
-<!-- OLD:         //callApi("http://localhost:1337/api/qeeda/ads/campaign"); -->
-<!-- OLD:         var spinner = document.getElementById("spinner"); -->
-<!-- OLD:         var alertDiv = document.getElementById("alert-div"); -->
-<!-- OLD:         var detail = document.getElementById("detail"); -->
-<!-- OLD:         var profile = document.getElementById("profile"); -->
-<!-- OLD:         var logoutBtn = document.getElementById("logoutBtn"); -->
-<!-- OLD:         var topForm = document.getElementById("top-form"); -->
-<!-- OLD:         var vehtable = document.getElementById("vehtable"); -->
-<!-- OLD:         //topForm.style.display = "none"; -->
-<!-- OLD:         vehtable.style.display = "none"; -->
-<!-- OLD:         var savedCode = localStorage.getItem("vehiclenumber"); -->
-<!-- OLD:         console.log('savedCode', savedCode); -->
-<!-- OLD:         if (savedCode) { -->
-<!-- OLD:             spinner.style.display = "inline-block"; -->
-<!-- OLD:             detail.style.display = "none"; -->
-<!-- OLD:             profile.style.display = "none"; -->
-<!-- OLD:             topForm.style.display = "none"; -->
-<!-- OLD:             vehtable.style.display = "none"; -->
-<!-- OLD:             alertDiv.setAttribute('style', 'display: none !important'); -->
-<!-- OLD:             callApi(savedCode); -->
-<!-- OLD:         } -->
-<!-- OLD:         function getVehicleData() { -->
-<!-- OLD:             let code = document.getElementById("code").value; -->
-<!-- OLD:             spinner.style.display = "inline-block"; -->
-<!-- OLD:             detail.style.display = "none"; -->
-<!-- OLD:             profile.style.display = "none"; -->
-<!-- OLD:             vehtable.style.display = "none"; -->
-<!-- OLD:  -->
-<!-- OLD:             alertDiv.setAttribute('style', 'display: none !important'); -->
-<!-- OLD:             if (!code) { -->
-<!-- OLD:                 spinner.style.display = "none"; -->
-<!-- OLD:                 alert('Code is required!'); -->
-<!-- OLD:                 return; -->
-<!-- OLD:             } -->
-<!-- OLD:             console.log('code', code); -->
-<!-- OLD:             callApi(code); -->
-<!-- OLD:         } -->
-<!-- OLD:         async function callApi(code) { -->
-<!-- OLD:             //http://localhost:4200/admin -->
-<!-- OLD:             //var url = "http://localhost:1337/safteycode/admin/vehicle/" + code -->
-<!-- OLD:             var url = "https://api.safetycode.in/safteycode/admin/vehicle/" + code -->
-<!-- OLD:             try { -->
-<!-- OLD:                 var response = await fetch(url); -->
-<!-- OLD:             } catch (error) { -->
-<!-- OLD:                 spinner.style.display = "none"; -->
-<!-- OLD:                 alert(error) -->
-<!-- OLD:                 return; -->
-<!-- OLD:             } -->
-<!-- OLD:             spinner.style.display = "none"; -->
-<!-- OLD:             if (!response) { -->
-<!-- OLD:                 alert("Server error, Try again later") -->
-<!-- OLD:                 return; -->
-<!-- OLD:             } -->
-<!-- OLD:             var respData = await response.json(); -->
-<!-- OLD:             if (respData.code && respData.code == "error") { -->
-<!-- OLD:                 //alert("" + respData.message); -->
-<!-- OLD:                 alertDiv.style.display = "block"; -->
-<!-- OLD:                 document.getElementById("alert-content").innerHTML = respData.message; -->
-<!-- OLD:                 return; -->
-<!-- OLD:             } -->
-<!-- OLD:             //console.log('data', respData); -->
-<!-- OLD:             showData(respData); -->
-<!-- OLD:  -->
-<!-- OLD:         } -->
-<!-- OLD:         function showData(data) { -->
-<!-- OLD:             topForm.style.display = "none"; -->
-<!-- OLD:             localStorage.setItem("vehiclenumber", data.vehicleRegNo); -->
-<!-- OLD:             var date = new Date(data.createdAt); -->
-<!-- OLD:             var jDate = date.toString(); -->
-<!-- OLD:             var newDate = formatDate(jDate); -->
-<!-- OLD:  -->
-<!-- OLD:             let item = `<div class="card col-md-6 col-xs-12 p-2"> -->
-<!-- OLD:                 <h6>Name: ${data.fullName}</h6> -->
-<!-- OLD:                 <h6>Owner Mobile: ${data.ownerMobile}  <button class="btn btn-primary btn-call" onclick="onCallClick(${data.ownerMobile})">Call Owner</button></h6> -->
-<!-- OLD:                  -->
-<!-- OLD:                 <h6>Family Mobile: ${data.familyMobile}  <button class="btn btn-primary btn-call" onclick="onCallClick(${data.familyMobile})">Call Family</button></h6> -->
-<!-- OLD:                 <h6>Vehicle Number: ${data.vehicleRegNo}</h6> -->
-<!-- OLD:                 <h6>Partner Name: ${data.partnerName}</h6> -->
-<!-- OLD:                 <h6>Promo Code: ${data.partnerId}</h6> -->
-<!-- OLD:                 <h6>Scan Count: ${data.scanCount}</h6> -->
-<!-- OLD:                 <h6>Joining Date: ${newDate}</h6> -->
-<!-- OLD:             </div>`; -->
-<!-- OLD:             document.getElementById("profile").innerHTML = item; -->
-<!-- OLD:             profile.style.display = "block"; -->
-<!-- OLD:            -->
-<!-- OLD:             //document.getElementById("depositAmount").innerHTML = `&#8377; ${(data.deposits * 73.5).toFixed(2)}`; -->
-<!-- OLD:             //document.getElementById("commission").innerHTML = `&#8377; ${data.commission}`; -->
-<!-- OLD:             //document.getElementById("paidAmount").innerHTML = `&#8377; ${data.paidAmount}`; -->
-<!-- OLD:             //document.getElementById("remainingAmount").innerHTML = `&#8377; ${data.commission - data.paidAmount}`; -->
-<!-- OLD:             //document.getElementById("refCommission").innerHTML = `&#8377; ${data.referralCommission ? data.referralCommission : 0}`; -->
-<!-- OLD:             //document.getElementById("referredTracker").innerHTML = data.referredTracker ? data.referredTracker : 0; -->
-<!-- OLD:             //detail.style.display = "block"; -->
-<!-- OLD:             logoutBtn.style.display = "block"; -->
-<!-- OLD:         } -->
-<!-- OLD:         function onCallClick(mobile) { -->
-<!-- OLD:             console.log('call', mobile); -->
-<!-- OLD:             document.location.href = "tel:" + mobile; -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:         function formatDate(date) { -->
-<!-- OLD:             var d = new Date(date), -->
-<!-- OLD:                 month = '' + (d.getMonth() + 1), -->
-<!-- OLD:                 day = '' + d.getDate(), -->
-<!-- OLD:                 year = d.getFullYear(); -->
-<!-- OLD:  -->
-<!-- OLD:             if (month.length < 2) -->
-<!-- OLD:                 month = '0' + month; -->
-<!-- OLD:             if (day.length < 2) -->
-<!-- OLD:                 day = '0' + day; -->
-<!-- OLD:  -->
-<!-- OLD:             return [day, month, year].join('-'); -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:         function logOut() { -->
-<!-- OLD:             localStorage.removeItem("vehiclenumber"); -->
-<!-- OLD:             logoutBtn.style.display = "none"; -->
-<!-- OLD:             topForm.style.display = "flex"; -->
-<!-- OLD:             detail.style.display = "none"; -->
-<!-- OLD:             profile.style.display = "none"; -->
-<!-- OLD:             vehtable.style.display ="none"; -->
-<!-- OLD:         } -->
-<!-- OLD:  -->
-<!-- OLD:         function copyLink() { -->
-<!-- OLD:             /* Get the text field */ -->
-<!-- OLD:             var copyText = document.getElementById("rc"); -->
-<!-- OLD:             /* Select the text field */ -->
-<!-- OLD:             copyText.select(); -->
-<!-- OLD:             copyText.setSelectionRange(0, 99999); /*For mobile devices*/ -->
-<!-- OLD:  -->
-<!-- OLD:             /* Copy the text inside the text field */ -->
-<!-- OLD:             document.execCommand("copy"); -->
-<!-- OLD:             /* Alert the copied text */ -->
-<!-- OLD:             document.getElementById("cpd").style.display = "inline-block" -->
-<!-- OLD:             // alert("Copied the text: " + copyText.value); -->
-<!-- OLD:         } -->
-<!-- OLD:     </script> -->
-<!-- OLD:     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" -->
-<!-- OLD:         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" -->
-<!-- OLD:         crossorigin="anonymous"></script> -->
-<!-- OLD:  -->
-<!-- OLD:  -->
-<!-- OLD:  -->
-<!-- OLD: </body> -->
-<!-- OLD:  -->
-<!-- OLD: </html> -->
-<!-- ========================= END OLD CODE BACKUP ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Safety Code Vehicle Panel</title>
+    <title>Safety Code Partner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <meta name="keywords"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
+    <link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16">
     <meta property="og:title" content="Your SAFETY with Safety QR Code">
     <meta property="og:site_name" content="Your SAFETY with Safety QR Code">
     <meta property="og:url" content="https://safetycode.in/">
@@ -360,263 +16,324 @@ Each old line is wrapped separately so nested HTML comments do not break the pag
     <meta property="og:description"
         content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/admin/style.css?v=20260826">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/logo.svg" type="image/gif" sizes="16x16">
-    <script>window.location.replace('https://api.safetycode.in/admin');</script>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
 </head>
 
-<body>
-    <!-- Old vehicle panel layout has been commented out/replaced with this clean admin lookup UI. -->
-    <main class="admin-app">
-        <section class="lookup-view" id="lookup-view">
-            <div class="hero-panel">
-                <header class="brand-row">
-                    <img src="../assets/imgs/logo.png" alt="Safety Code">
-                    <span>Admin Panel</span>
-                </header>
-                <div class="hero-copy">
-                    <p class="eyebrow">Vehicle lookup</p>
-                    <h1>Find registered vehicle details instantly.</h1>
-                    <p>Search by vehicle number to view owner contact, family contact, payment status and QR information from your local backend.</p>
+<body >
+    <div class="container-fluid">
+        <div style="text-align: center; margin-top: 10px;">
+            <!-- <img src="assets/pm_logo.png" width="100px"> -->
+            <span class="title">Safety Code Vehicle Panel</span>
+        </div>
+        <div class="top-form" id="top-form">
+            <div>
+                <input class="form-control" type="text" id="code" placeholder="Enter vehicle number" autocomplete="off">
+            </div>
+            <div class="btn-submit">
+                <button type="submit" class="btn btn-primary" onclick="getVehicleData()">Submit</button>
+            </div>
+        </div>
+        <div class="text-center m-2">
+            <div class="spinner-grow text-light" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="alert alert-danger d-flex align-items-center" role="alert" id="alert-div"
+            style="display: none !important">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+            </svg>
+            <div id="alert-content">
+            </div>
+        </div>
+        <div id="profile" class="profile">
+        </div>
+        <div id="detail" class="mt-4" style="display: none;">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Registration
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="registration">0</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="demo-strip">
-                    <span>Demo vehicle</span>
-                    <strong>rj14cd1001</strong>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Total Paid
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="totalPaid">0</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <form class="lookup-card" onsubmit="getVehicleData(event)">
-                <div class="card-logo">
-                    <img src="../assets/imgs/logo.png" alt="Safety Code">
+            <div class="row">
+                <!-- <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Deposit Amount
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="depositAmount">&#8377; 0</h2>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card border-success">
+                        <div class="card-header">
+                            Your Commission
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="commission">&#8377; 0</h2>
+                        </div>
+                    </div>
                 </div>
-                <h2>Vehicle Panel</h2>
-                <p>Enter a registered vehicle number to continue.</p>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Paid Amount
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="paidAmount">&#8377;0</h2>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="row">
 
-                <label for="code">Vehicle number</label>
-                <div class="input-wrap">
-                    <span>IN</span>
-                    <input type="text" id="code" placeholder="rj14cd1001" autocomplete="off">
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Remaining Amount
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="remainingAmount">&#8377; 0</h2>
+                        </div>
+                    </div>
                 </div>
-
-                <button type="submit" id="search-button">
-                    <span id="button-text">Search Vehicle</span>
-                    <span class="spinner" id="spinner" aria-hidden="true"></span>
-                </button>
-
-                <div class="alert" id="alert-div">
-                    <strong id="alert-title">Error</strong>
-                    <span id="alert-content"></span>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Network Commission (200/deposit)
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="refCommission">&#8377;0</h2>
+                        </div>
+                    </div>
                 </div>
-            </form>
-        </section>
+            </div> -->
+            <!-- <div class="row">
 
-        <section class="result-view" id="result-view">
-            <header class="result-header">
-                <div class="brand-row dark">
-                    <img src="../assets/imgs/logo.png" alt="Safety Code">
-                    <span>Vehicle Panel</span>
+                <div class="col-md-6 col-sm-12 col-xs-12 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Your Network Users
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-text" id="referredTracker">0</h2>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="reset-button" onclick="logOut()">New Search</button>
-            </header>
+            </div> -->
+        </div>
+        <div id="vehtable" class="col-md-6 col-sm-12 col-xs-12 mb-4">
+            <table class="table table-striped mt-2 vehicle-table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">QR ID</th>
+                        <th scope="col">Payment</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <!-- <span class="badge bg-success">Complete</span> -->
 
-            <section class="vehicle-hero">
-                <div>
-                    <p class="eyebrow">Registered vehicle</p>
-                    <h1 id="vehicle-number">-</h1>
-                    <p id="vehicle-meta">Partner and registration information</p>
-                </div>
-                <div class="status-stack">
-                    <span class="status-pill" id="status-pill">Active</span>
-                    <span class="payment-pill" id="payment-pill">Payment</span>
-                </div>
-            </section>
-
-            <section class="detail-grid" id="profile">
-                <article class="info-card owner-card">
-                    <span>Owner</span>
-                    <strong id="owner-name">-</strong>
-                    <p id="owner-mobile">-</p>
-                    <button type="button" id="owner-call" onclick="onCallClick('owner')">Call Owner</button>
-                </article>
-                <article class="info-card">
-                    <span>Family contact</span>
-                    <strong id="family-mobile">-</strong>
-                    <p>Emergency contact number</p>
-                    <button type="button" id="family-call" onclick="onCallClick('family')">Call Family</button>
-                </article>
-                <article class="info-card">
-                    <span>Partner</span>
-                    <strong id="partner-name">-</strong>
-                    <p id="partner-code">-</p>
-                </article>
-                <article class="info-card">
-                    <span>QR ID</span>
-                    <strong id="qr-id">-</strong>
-                    <p id="scan-count">0 scans</p>
-                </article>
-                <article class="info-card">
-                    <span>Blood group</span>
-                    <strong id="blood-group">-</strong>
-                    <p>Medical reference</p>
-                </article>
-                <article class="info-card wide">
-                    <span>Address</span>
-                    <strong id="address">-</strong>
-                    <p id="joining-date">Registered date</p>
-                </article>
-            </section>
-        </section>
-    </main>
+                <tbody id="vehicle">
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mb-4" style="text-align: center; display: none; margin-top: 10px;" id="logoutBtn">
+            <button class="btn btn-primary" onclick="logOut()">Logout</button>
+        </div>
+    </div>
 
     <script type="text/javascript">
-        var lookupView = document.getElementById("lookup-view");
-        var resultView = document.getElementById("result-view");
+        //console.log('js called');
+        //callApi("http://localhost:1337/api/qeeda/ads/campaign");
         var spinner = document.getElementById("spinner");
-        var buttonText = document.getElementById("button-text");
-        var searchButton = document.getElementById("search-button");
         var alertDiv = document.getElementById("alert-div");
-        var currentVehicle = null;
-        var API_BASE = window.SAFETY_API_BASE || "https://api.safetycode.in";
-
+        var detail = document.getElementById("detail");
+        var profile = document.getElementById("profile");
+        var logoutBtn = document.getElementById("logoutBtn");
+        var topForm = document.getElementById("top-form");
+        var vehtable = document.getElementById("vehtable");
+        //topForm.style.display = "none";
+        vehtable.style.display = "none";
         var savedCode = localStorage.getItem("vehiclenumber");
+        console.log('savedCode', savedCode);
         if (savedCode) {
-            document.getElementById("code").value = savedCode;
+            spinner.style.display = "inline-block";
+            detail.style.display = "none";
+            profile.style.display = "none";
+            topForm.style.display = "none";
+            vehtable.style.display = "none";
+            alertDiv.setAttribute('style', 'display: none !important');
+            callApi(savedCode);
         }
+        function getVehicleData() {
+            let code = document.getElementById("code").value;
+            spinner.style.display = "inline-block";
+            detail.style.display = "none";
+            profile.style.display = "none";
+            vehtable.style.display = "none";
 
-        function getVehicleData(event) {
-            if (event) {
-                event.preventDefault();
-            }
-
-            var code = document.getElementById("code").value.trim();
-            hideError();
-
+            alertDiv.setAttribute('style', 'display: none !important');
             if (!code) {
-                showError("Vehicle number required", "Please enter a registered vehicle number.");
+                spinner.style.display = "none";
+                alert('Code is required!');
                 return;
             }
-
+            console.log('code', code);
             callApi(code);
         }
-
         async function callApi(code) {
-            setLoading(true);
-            var url = API_BASE + "/safetycode/admin/vehicle/" + encodeURIComponent(code);
-
+            //http://localhost:4200/admin
+            //var url = "http://localhost:1337/safteycode/admin/vehicle/" + code
+            var url = "https://api.safetycode.in/safteycode/admin/vehicle/" + code
             try {
                 var response = await fetch(url);
-                var respData = await response.json();
-
-                if (!response.ok || respData.code === "error") {
-                    showError("Vehicle not found", respData.message || "No registered vehicle found for this number.");
-                    return;
-                }
-
-                showData(respData);
             } catch (error) {
-                showError("Server error", "Safety Code server is not reachable right now.");
-            } finally {
-                setLoading(false);
-            }
-        }
-
-        function showData(data) {
-            currentVehicle = data;
-            localStorage.setItem("vehiclenumber", data.vehicleRegNo);
-
-            document.getElementById("vehicle-number").innerText = (data.vehicleRegNo || "-").toUpperCase();
-            document.getElementById("vehicle-meta").innerText = "Registered on " + formatDate(data.createdAt);
-            document.getElementById("status-pill").innerText = data.status ? "Active" : "Inactive";
-            document.getElementById("status-pill").className = data.status ? "status-pill active" : "status-pill inactive";
-            document.getElementById("payment-pill").innerText = data.paymentStatus || "Payment";
-            document.getElementById("payment-pill").className = data.paymentStatus === "PAID" ? "payment-pill paid" : "payment-pill pending";
-
-            document.getElementById("owner-name").innerText = data.fullName || "-";
-            document.getElementById("owner-mobile").innerText = data.ownerMobile || "-";
-            document.getElementById("family-mobile").innerText = data.familyMobile || "-";
-            document.getElementById("partner-name").innerText = data.partnerName || "-";
-            document.getElementById("partner-code").innerText = "Promo code: " + (data.partnerId || "-");
-            document.getElementById("qr-id").innerText = data.qrId || "-";
-            document.getElementById("scan-count").innerText = (data.scanCount || 0) + " scans";
-            document.getElementById("blood-group").innerText = data.bloodGroup || "-";
-            document.getElementById("address").innerText = formatAddress(data.address);
-            document.getElementById("joining-date").innerText = "Joining date: " + formatDate(data.createdAt);
-
-            lookupView.style.display = "none";
-            resultView.style.display = "block";
-        }
-
-        function onCallClick(type) {
-            if (!currentVehicle) {
+                spinner.style.display = "none";
+                alert(error)
                 return;
             }
-
-            var mobile = type === "family" ? currentVehicle.familyMobile : currentVehicle.ownerMobile;
-            if (mobile) {
-                document.location.href = "tel:" + mobile;
+            spinner.style.display = "none";
+            if (!response) {
+                alert("Server error, Try again later")
+                return;
             }
+            var respData = await response.json();
+            if (respData.code && respData.code == "error") {
+                //alert("" + respData.message);
+                alertDiv.style.display = "block";
+                document.getElementById("alert-content").innerHTML = respData.message;
+                return;
+            }
+            //console.log('data', respData);
+            showData(respData);
+
         }
+        function showData(data) {
+            topForm.style.display = "none";
+            localStorage.setItem("vehiclenumber", data.vehicleRegNo);
+            var date = new Date(data.createdAt);
+            var jDate = date.toString();
+            var newDate = formatDate(jDate);
 
-        function formatAddress(address) {
-            if (!address) {
-                return "-";
-            }
-
-            if (typeof address === "string") {
-                return address;
-            }
-
-            return [address.line1, address.city, address.state].filter(Boolean).join(", ") || "-";
+            let item = `<div class="card col-md-6 col-xs-12 p-2">
+                <h6>Name: ${data.fullName}</h6>
+                <h6>Owner Mobile: ${data.ownerMobile}  <button class="btn btn-primary btn-call" onclick="onCallClick(${data.ownerMobile})">Call Owner</button></h6>
+                
+                <h6>Family Mobile: ${data.familyMobile}  <button class="btn btn-primary btn-call" onclick="onCallClick(${data.familyMobile})">Call Family</button></h6>
+                <h6>Vehicle Number: ${data.vehicleRegNo}</h6>
+                <h6>Partner Name: ${data.partnerName}</h6>
+                <h6>Promo Code: ${data.partnerId}</h6>
+                <h6>Scan Count: ${data.scanCount}</h6>
+                <h6>Joining Date: ${newDate}</h6>
+            </div>`;
+            document.getElementById("profile").innerHTML = item;
+            profile.style.display = "block";
+          
+            //document.getElementById("depositAmount").innerHTML = `&#8377; ${(data.deposits * 73.5).toFixed(2)}`;
+            //document.getElementById("commission").innerHTML = `&#8377; ${data.commission}`;
+            //document.getElementById("paidAmount").innerHTML = `&#8377; ${data.paidAmount}`;
+            //document.getElementById("remainingAmount").innerHTML = `&#8377; ${data.commission - data.paidAmount}`;
+            //document.getElementById("refCommission").innerHTML = `&#8377; ${data.referralCommission ? data.referralCommission : 0}`;
+            //document.getElementById("referredTracker").innerHTML = data.referredTracker ? data.referredTracker : 0;
+            //detail.style.display = "block";
+            logoutBtn.style.display = "block";
+        }
+        function onCallClick(mobile) {
+            console.log('call', mobile);
+            document.location.href = "tel:" + mobile;
         }
 
         function formatDate(date) {
-            if (!date) {
-                return "-";
-            }
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
 
-            var d = new Date(date);
-            var month = "" + (d.getMonth() + 1);
-            var day = "" + d.getDate();
-            var year = d.getFullYear();
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;
 
-            if (month.length < 2) {
-                month = "0" + month;
-            }
-            if (day.length < 2) {
-                day = "0" + day;
-            }
-
-            return [day, month, year].join("-");
-        }
-
-        function setLoading(isLoading) {
-            spinner.style.display = isLoading ? "inline-block" : "none";
-            buttonText.innerText = isLoading ? "Searching" : "Search Vehicle";
-            searchButton.disabled = isLoading;
-        }
-
-        function showError(title, message) {
-            alertDiv.style.display = "block";
-            document.getElementById("alert-title").innerText = title;
-            document.getElementById("alert-content").innerText = message;
-        }
-
-        function hideError() {
-            alertDiv.style.display = "none";
-            document.getElementById("alert-content").innerText = "";
+            return [day, month, year].join('-');
         }
 
         function logOut() {
             localStorage.removeItem("vehiclenumber");
-            document.getElementById("code").value = "";
-            currentVehicle = null;
-            resultView.style.display = "none";
-            lookupView.style.display = "grid";
-            hideError();
+            logoutBtn.style.display = "none";
+            topForm.style.display = "flex";
+            detail.style.display = "none";
+            profile.style.display = "none";
+            vehtable.style.display ="none";
+        }
+
+        function copyLink() {
+            /* Get the text field */
+            var copyText = document.getElementById("rc");
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+            /* Alert the copied text */
+            document.getElementById("cpd").style.display = "inline-block"
+            // alert("Copied the text: " + copyText.value);
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
