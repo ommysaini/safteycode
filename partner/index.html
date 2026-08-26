@@ -630,7 +630,7 @@ Each old line is wrapped separately so nested HTML comments do not break the pag
 
         async function callApi(code) {
             setLoading(true);
-            var url = API_BASE + "/safteycode/partner/" + encodeURIComponent(code);
+            var url = API_BASE + "/safetycode/partner/" + encodeURIComponent(code);
 
             try {
                 var response = await fetch(url);
@@ -762,7 +762,7 @@ Each old line is wrapped separately so nested HTML comments do not break the pag
                 return;
             }
 
-            var url = API_BASE + "/safteycode/partner/" + encodeURIComponent(activePartnerCode);
+            var url = API_BASE + "/safetycode/partner/" + encodeURIComponent(activePartnerCode);
 
             try {
                 var response = await fetch(url);

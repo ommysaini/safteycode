@@ -486,7 +486,7 @@ function setupAdminAuth() {
       setAuthStatus("Logging in...", "");
 
       try {
-        var response = await fetch(API_BASE + "/api/auth/signin", {
+        var response = await fetch(API_BASE + "/auth/signin", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

@@ -502,7 +502,7 @@ Each old line is wrapped separately so nested HTML comments do not break the pag
 
         async function callApi(code) {
             setLoading(true);
-            var url = API_BASE + "/safteycode/admin/vehicle/" + encodeURIComponent(code);
+            var url = API_BASE + "/safetycode/admin/vehicle/" + encodeURIComponent(code);
 
             try {
                 var response = await fetch(url);
