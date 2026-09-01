@@ -24,7 +24,7 @@ function onButtonClick() {
   startIndex = start;
   endIndex = end;
   pageIndex = startIndex;
-  qrNumber = 100 + (startIndex * 9 - 9);
+  qrNumber = 100 + (startIndex * 15 - 15);
   qrIds = [];
   qrPage='';
   createPage();
@@ -38,8 +38,8 @@ function createPage() {
   addQrCards();
 }
 function addQrCards() {
-  let qrStartIndex = (startIndex - 1) * 9 + 1;
-  let qrEndIndex = endIndex * 9;
+  let qrStartIndex = (startIndex - 1) * 15 + 1;
+  let qrEndIndex = endIndex * 15;
   console.log('qrStartIndex', qrStartIndex);
   console.log('qrEndIndex', qrEndIndex);
   for (let i = qrStartIndex; i <= qrEndIndex; i++) {
@@ -52,8 +52,8 @@ function addQrCards() {
     let qrId = 'http://api.safetycode.in/safetycode/' + qID;
     qr_cards =
       qr_cards +
-      `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
-    if (i % 9 == 0) {
+      `<div class="card-container"> <div class="image-holder"> <img src="./qr-template-clean.png" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
+    if (i % 15 == 0) {
       setQrCards(pageIndex, i, qr_cards);
       pageIndex++;
     }
@@ -80,7 +80,7 @@ function setQrCards(page, index, cards) {
   let p = document.getElementById('qrpage-' + page);
   p.innerHTML = cards;
   qr_cards = '';
-  setQrCodes(index - 8, index);
+  setQrCodes(index - 14, index);
 }
 
 function setQrCodes(start, end) {
