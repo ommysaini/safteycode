@@ -48,7 +48,6 @@ function addQrCards() {
     let qID = randomString + qrNumber;
     qrIds.push(qID);
     //console.log(qID);
-    //https://surkshacode.com/safetycode/
     let qrId = 'http://api.safetycode.in/safetycode/' + qID;
     qr_cards =
       qr_cards +
@@ -59,6 +58,24 @@ function addQrCards() {
     }
   }
   //console.log('qrIds', qrIds);
+   console.log('qrIds', qrIds);
+  // let url= 'http://localhost:1323/safetycode/generate';
+  let url = 'http://api.safetycode.in/safetycode/generate';
+  // debugger;
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ qrIds: qrIds }),
+  })
+    .then((response) => response.json(console.log('Response:', response)))
+    .then((data) => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   this.saveCodes(qrIds);
 }
 
