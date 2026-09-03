@@ -114,7 +114,7 @@ function setQrCodes(start, end) {
       text: qrIdValue,
       width: 512,
       height: 512,
-      colorDark: '#000000',
+      colorDark: '#2F396C',
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.H,
     });
