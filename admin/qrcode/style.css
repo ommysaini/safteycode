@@ -87,4 +87,8 @@
   width: 100%;
   height: 100%;
   display: block;
+  /* Keep QR modules crisp pure black/white when scaled down for print -
+     smooth scaling blends edges to grey, hurting contrast/scannability. */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }

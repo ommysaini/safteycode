@@ -110,6 +110,13 @@ function setQrCodes(start, end) {
     if (!qrIdValue) {
       continue;
     }
-    new QRCode(elem, qrIdValue);
+    new QRCode(elem, {
+      text: qrIdValue,
+      width: 512,
+      height: 512,
+      colorDark: '#000000',
+      colorLight: '#ffffff',
+      correctLevel: QRCode.CorrectLevel.H,
+    });
   }
 }
