@@ -37,7 +37,7 @@ function createPage() {
   qr_body.innerHTML = qrPage;
   addQrCards();
 }
-function addQrCards() {
+async function addQrCards() {
   let qrStartIndex = (startIndex - 1) * 35 + 1;
   let qrEndIndex = endIndex * 35;
   console.log('qrStartIndex', qrStartIndex);
@@ -55,6 +55,12 @@ function addQrCards() {
     if (i % 35 == 0) {
       setQrCards(pageIndex, i, qr_cards);
       pageIndex++;
+      // Yield to the browser between pages so it can actually paint/GC
+      // before the next batch of QR canvases is created - generating
+      // hundreds of QR codes in one tight synchronous loop was
+      // occasionally starving the renderer, causing some QR codes on
+      // later pages to come out wrong (e.g. plain black).
+      await new Promise((resolve) => setTimeout(resolve, 50));
     }
   }
   //console.log('qrIds', qrIds);
@@ -112,8 +118,8 @@ function setQrCodes(start, end) {
     }
     new QRCode(elem, {
       text: qrIdValue,
-      width: 512,
-      height: 512,
+      width: 300,
+      height: 300,
       colorDark: '#2F396C',
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.H,
