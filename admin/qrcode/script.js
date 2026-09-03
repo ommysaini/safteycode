@@ -24,7 +24,7 @@ function onButtonClick() {
   startIndex = start;
   endIndex = end;
   pageIndex = startIndex;
-  qrNumber = 100 + (startIndex * 403 - 403);
+  qrNumber = 100 + (startIndex * 35 - 35);
   qrIds = [];
   qrPage='';
   createPage();
@@ -38,8 +38,8 @@ function createPage() {
   addQrCards();
 }
 function addQrCards() {
-  let qrStartIndex = (startIndex - 1) * 403 + 1;
-  let qrEndIndex = endIndex * 403;
+  let qrStartIndex = (startIndex - 1) * 35 + 1;
+  let qrEndIndex = endIndex * 35;
   console.log('qrStartIndex', qrStartIndex);
   console.log('qrEndIndex', qrEndIndex);
   for (let i = qrStartIndex; i <= qrEndIndex; i++) {
@@ -52,7 +52,7 @@ function addQrCards() {
     qr_cards =
       qr_cards +
       `<div class="card-container"> <div class="image-holder"> <img src="./qr-template-clean.png" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
-    if (i % 403 == 0) {
+    if (i % 35 == 0) {
       setQrCards(pageIndex, i, qr_cards);
       pageIndex++;
     }
@@ -97,7 +97,7 @@ function setQrCards(page, index, cards) {
   let p = document.getElementById('qrpage-' + page);
   p.innerHTML = cards;
   qr_cards = '';
-  setQrCodes(index - 402, index);
+  setQrCodes(index - 34, index);
 }
 
 function setQrCodes(start, end) {
