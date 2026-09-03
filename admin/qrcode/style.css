@@ -45,17 +45,17 @@
      only spacing between cards (1mm, for clean cutting) - the leftover
      page space is centered around the whole block via align/justify-content. */
   grid-template-columns: repeat(5, 88.9mm);
-  grid-template-rows: repeat(7, 38.1mm);
+  grid-template-rows: repeat(7, 38.32mm);
   gap: 1mm;
   justify-content: center;
   align-content: center;
 }
 .card-container {
-  /* Sized to match qrcodebg.jpg's native aspect ratio (826x354px)
-     at the original 88.9mm width, so the card prints at the image's
-     actual size instead of stretching/cropping it. */
+  /* Sized to match qr-template-yellow.png's native aspect ratio
+     (1051x453px) at the original 88.9mm width, so the card prints at
+     the image's actual size instead of stretching/cropping it. */
   width: 88.9mm;
-  height: 38.1mm;
+  height: 38.32mm;
   padding: 0;
   border: 0px solid #dddddd;
   position: relative;
@@ -68,15 +68,15 @@
 .card-content {
   /* Positioned/sized as a percentage of the card so it always lands
      inside the white box printed on the template image, regardless
-     of the card's absolute size. Box measured at left:62.95% top:5.08%
-     width:30.99% height:72.32% of the image; this sits inset ~10% inside
+     of the card's absolute size. Box measured at left:64.51% top:6.40%
+     width:31.97% height:73.73% of the image; this sits inset ~10% inside
      that box on every side so the QR doesn't touch the box border. */
   position: absolute;
   z-index: 2;
-  left: 66.05%;
-  top: 12.31%;
-  width: 24.79%;
-  height: 57.86%;
+  left: 67.71%;
+  top: 13.77%;
+  width: 25.58%;
+  height: 58.98%;
 }
 .qr-code {
   display: block;

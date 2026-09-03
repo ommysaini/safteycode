@@ -51,7 +51,7 @@ function addQrCards() {
     let qrId = 'http://api.safetycode.in/safetycode/' + qID;
     qr_cards =
       qr_cards +
-      `<div class="card-container"> <div class="image-holder"> <img src="./qr-template-clean.png" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
+      `<div class="card-container"> <div class="image-holder"> <img src="./qr-template-yellow.png" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
     if (i % 35 == 0) {
       setQrCards(pageIndex, i, qr_cards);
       pageIndex++;
